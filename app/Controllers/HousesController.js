@@ -46,6 +46,14 @@ export default class HousesController {
       console.error(error)
     }
   }
+
+  removeHouse(id) {
+    try {
+      HousesService.removeHouse(id)
+    } catch (error) {
+      console.error(error)
+    }
+  }
   bid(id) {
     try {
       HousesService.bid(id)
