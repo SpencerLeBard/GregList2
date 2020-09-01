@@ -2,6 +2,7 @@ import Car from "./Models/Car.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import House from "./Models/Houses.js"
+import Jobs from "./Models/Jobs.js"
 
 class AppState extends EventEmitter {
   /** @type {Car[]} */
@@ -9,6 +10,9 @@ class AppState extends EventEmitter {
 
   /** @type {House[]} */
   houses = []
+
+  /** @type {Jobs[]} */
+  jobs = []
 
 }
 

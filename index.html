@@ -54,38 +54,60 @@
         </div>
         <div class="row" id="draw-cars">
         </div>
-        <div class="row my-3">
-            <div class="col" id="form">
-                <form onsubmit="app.housesController.createHouse()" class="form-inline">
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="bedrooms">Bedrooms</label>
-                        <input type="text" name="bedrooms" id="bedrooms" class="form-control" placeholder="Bedrooms...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="bathrooms">Bathrooms</label>
-                        <input type="text" name="bathrooms" id="bathrooms" class="form-control"
-                            placeholder="Bathrooms...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="levels">Levels</label>
-                        <input type="number" name="levels" id="levels" class="form-control" placeholder="Levels...">
-                        <div class="form-group p-1">
-                            <label class="mr-1" for="price">Price</label>
-                            <input type="number" name="price" id="price" class="form-control" placeholder="Price...">
-                        </div>
-                        <div class="form-group p-1">
-                            <label class="mr-1" for="year">Year</label>
-                            <input type="text" name="year" id="year" class="form-control" placeholder="Year...">
-                        </div>
-                        <div class="form-group p-1">
-                            <label class="mr-1" for="imgUrl">Image Url</label>
-                            <input type="url" name="imgUrl" id="imgUrl" class="form-control" placeholder="Image Url...">
-                        </div>
-                        <button type="submit" class="btn btn-outline-success">Add House</button>
-                </form>
-            </div>
-            <div class="row" id="draw-houses"></div>
+        <div class="row my-3 bg-primary">
+            <div class="col" id="form"></div>
+            <form onsubmit="app.housesController.createHouse()" class="form-inline">
+                <div class="form-group p-1">
+                    <label class="mr-1" for="bedrooms">Bedrooms</label>
+                    <input type="text" name="bedrooms" id="bedrooms" class="form-control" placeholder="Bedrooms...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="bathrooms">Bathrooms</label>
+                    <input type="text" name="bathrooms" id="bathrooms" class="form-control" placeholder="Bathrooms...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="levels">Levels</label>
+                    <input type="number" name="levels" id="levels" class="form-control" placeholder="Levels...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="price">Price</label>
+                    <input type="number" name="price" id="price" class="form-control" placeholder="Price...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="year">Year</label>
+                    <input type="text" name="year" id="year" class="form-control" placeholder="Year...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="imgUrl">Image Url</label>
+                    <input type="url" name="imgUrl" id="imgUrl" class="form-control" placeholder="Image Url...">
+                </div>
+                <button type="submit" class="btn btn-outline-success">Add House</button>
+            </form>
         </div>
+        <div class="row" id="draw-houses"></div>
+        <div class="row my-3 bg-primary">
+            <div class="col" id="form"></div>
+            <form onsubmit="app.JobsController.createJob()" class="form-inline">
+                <div class="form-group p-1">
+                    <label class="mr-1" for="company">Company</label>
+                    <input type="text" name="company" id="company" class="form-control" placeholder="Company...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="jobTitle">Job Title</label>
+                    <input type="text" name="jobTitle" id="jobTitle" class="form-control" placeholder=" Job Title...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="hours">Hours</label>
+                    <input type="number" name="hours" id="hours" class="form-control" placeholder="Hours...">
+                </div>
+                <div class="form-group p-1">
+                    <label class="mr-1" for="rate">Rate</label>
+                    <input type="number" name="rate" id="rate" class="form-control" placeholder="Rate...">
+                </div>
+                <button type="submit" class="btn btn-outline-success">Add Job</button>
+            </form>
+        </div>
+        <div class="row" id="draw-jobs"></div>
     </main>
     <footer class="container-fluid bg-primary text-light">
         <div class="row text-center">
