@@ -5,8 +5,8 @@ import carsService from "../Services/CarsService.js";
 function _drawCars() {
   let cars = ProxyState.cars
   let templates = ''
-  cars.forEach(c => templates += c.Template)
-  document.getElementById('data').innerHTML = templates
+  cars.forEach(c => templates += c.CarsTemplate)
+  document.getElementById('draw-cars').innerHTML = templates
 }
 
 

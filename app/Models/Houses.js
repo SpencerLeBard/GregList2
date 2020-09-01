@@ -1,22 +1,22 @@
-export default class Car {
-  constructor({ _id, make, model, year, price, imgUrl, description }) {
+export default class House {
+
+  constructor({ _id, bedrooms, bathrooms, levels, imgUrl, year, price }) {
     this.id = _id
-    this.make = make
-    this.model = model
+    this.bedrooms = bedrooms
+    this.bathrooms = bathrooms
+    this.levels = levels
+    this.imgUrl = imgUrl || "//placehold.it/200x200"
     this.year = year
     this.price = price
-    this.imgUrl = imgUrl
-    this.description = description || "no description"
   }
 
-  get CarsTemplate() {
+  get HouseTemplate() {
     return `            
     <div class="col-4">
       <div class="card">
-          <img class="card-img-top" src="${this.imgUrl}" alt="">
+          <img class="card-img-top" src="${this.imgUrl}" alt="yo">
           <div class="card-body">
-              <h4 class="card-title">${this.make} - ${this.model} - ${this.year}</h4>
-              <p class="card-text">${this.description}</p>
+              <h4 class="card-title">${this.bedrooms} - ${this.bathrooms} - ${this.year}</h4>
               <div class="d-flex justify-content-between">
                   <button class="btn btn-outline-danger" onclick="app.carsController.removeCar('${this.id}')">Delete</button>
                   <button class="btn btn-outline-info" onclick="app.carsController.bid('${this.id}')">+ $100</button>
@@ -27,9 +27,3 @@ export default class Car {
     </div>`
   }
 }
-
-
-
-
-
-
